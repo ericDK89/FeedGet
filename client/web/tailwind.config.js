@@ -3,6 +3,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        darkTheme: {
+          900: "#18181b",
+        },
         brand: {
           300: "#996dff",
           500: "#8257e5",
@@ -10,5 +13,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
 };
